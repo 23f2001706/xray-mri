@@ -589,9 +589,7 @@ with gr.Blocks(css=custom_css) as try_page:
 
             ct_input = gr.Image(
                 type="numpy",
-                height=450,
-                show_download_button=False,
-                show_fullscreen_button=True
+                height=450
             )
 
             generate_btn = gr.Button(
@@ -605,9 +603,7 @@ with gr.Blocks(css=custom_css) as try_page:
             gr.Markdown("### 🩻 Generated MRI Output")
 
             mri_output = gr.Image(
-                height=450,
-                show_download_button=True,
-                show_fullscreen_button=True
+                height=450
             )
 
     with gr.Accordion("⚙️ Inference Details", open=False):
